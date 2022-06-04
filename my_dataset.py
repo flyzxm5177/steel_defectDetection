@@ -202,7 +202,8 @@ class VOCDataSet(Dataset):
 # import transforms
 # from draw_box_utils import draw_objs
 # from PIL import Image
-# import json
+# import 
+
 # import matplotlib.pyplot as plt
 # import torchvision.transforms as ts
 # import random
@@ -210,7 +211,7 @@ class VOCDataSet(Dataset):
 # # read class_indict
 # category_index = {}
 # try:
-#     json_file = open('./steel_defect_classes.json', 'r')
+#     json_file = open('./steel_defectDetection/steel_defect_classes.json', 'r')
 #     class_dict = json.load(json_file)
 #     category_index = {str(v): str(k) for k, v in class_dict.items()}
 # except Exception as e:
