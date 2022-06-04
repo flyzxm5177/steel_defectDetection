@@ -20,7 +20,7 @@ def create_model(num_classes):
     # backbone.out_channels = 512
 
     # https://download.pytorch.org/models/mobilenet_v2-b0353104.pth
-    backbone = MobileNetV2(weights_path="./mobilenet_v2-b0353104.pth").features
+    backbone = MobileNetV2(weights_path="./steel_defectDetection/mobilenet_v2-b0353104.pth").features
     backbone.out_channels = 1280  # 设置对应backbone输出特征矩阵的channels
 
     anchor_generator = AnchorsGenerator(sizes=((32, 64, 128, 256, 512),),
