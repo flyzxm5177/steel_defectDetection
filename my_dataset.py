@@ -49,7 +49,7 @@ class VOCDataSet(Dataset):
 
         # read class_indict
         # json_file = './pascal_voc_classes.json'
-        json_file = './steel_defect_classes.json'
+        json_file ='./steel_defectDetection/steel_defect_classes.json'
         assert os.path.exists(json_file), "{} file not exist.".format(json_file)
         with open(json_file, 'r') as f:
             self.class_dict = json.load(f)
